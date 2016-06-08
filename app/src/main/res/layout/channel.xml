@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:tools="http://schemas.android.com/tools"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  android:orientation="vertical"
+			  tools:context=".MainActivity">
+
+    <TextView 
+        android:id="@+id/textHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+       	android:paddingLeft="8dp"
+        android:background="#0087FF"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        />
+    
+    <TextView 
+        android:id="@+id/textSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="right"
+       	android:paddingLeft="8dp"
+        android:background="#0087FF"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        android:visibility="gone"
+        />
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		>
+		<android.support.v4.widget.SwipeRefreshLayout
+			android:id="@+id/channel_pull_to_refresh"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			>
+
+			<ListView
+				android:id="@+id/list"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				/>
+
+		</android.support.v4.widget.SwipeRefreshLayout>
+
+		<android.support.design.widget.FloatingActionButton
+			android:id="@+id/floatig_btn_sort"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom|right"
+			android:layout_marginBottom="16dp"
+			android:layout_marginRight="48dp"
+			app:backgroundTint="#0087FF"
+			app:borderWidth="0dp"
+			app:elevation="6dp"
+			app:fabSize="normal"
+			android:src="@drawable/arrow_down"
+			/>
+	</FrameLayout>
+<!--
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#0087FF"
+        android:orientation="horizontal"
+        >
+
+        <jp.codepanic.netlis.ClickableImageView
+            android:id="@+id/btnRefresh"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:clickable="true"
+            android:onClick="onClickRefresh"
+            android:scaleType="fitCenter"
+            android:gravity="right"
+            android:src="@drawable/loop"
+            android:padding="4dp"
+            android:layout_weight="1"
+            />
+        
+        <jp.codepanic.netlis.ClickableImageView
+            android:id="@+id/btnFavorite"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:clickable="true"
+            android:onClick="onClickFavorite"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fav_on"
+            android:padding="4dp"
+            android:layout_weight="1"
+            />
+
+        <jp.codepanic.netlis.ClickableImageView
+            android:id="@+id/btnRecList"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:clickable="true"
+            android:onClick="onClickReclist"
+            android:scaleType="fitCenter"
+            android:src="@drawable/rec_folder"
+            android:padding="4dp"
+            android:layout_weight="1"
+            />
+        
+        <jp.codepanic.netlis.ClickableImageView
+            android:id="@+id/btnBlocklist"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:clickable="true"
+            android:onClick="onClickBlocklist"
+            android:scaleType="fitCenter"
+            android:src="@drawable/blocked"
+            android:padding="4dp"
+            android:layout_weight="1"
+            />
+        
+        <jp.codepanic.netlis.ClickableImageView
+            android:id="@+id/btnHistory"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:clickable="true"
+            android:onClick="onClickHistory"
+            android:scaleType="fitCenter"
+            android:src="@drawable/history"
+            android:padding="4dp"
+            android:layout_weight="1"
+            />
+        
+        <jp.codepanic.netlis.ClickableImageView
+            android:id="@+id/btnSort"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:clickable="true"
+            android:onClick="onClickSort"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrow_down" 
+            android:padding="4dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+-->
+
+</LinearLayout>

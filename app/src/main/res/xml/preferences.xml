@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <PreferenceCategory
+        android:title="全般"
+        >
+        <CheckBoxPreference
+            android:key="common_notify"
+            android:title="通知領域に常駐"
+            android:summary="※お気に入り番組開始を定期チェックする場合はON推奨。サービスが不意に停止されることを予防します。"
+            android:defaultValue="true"
+            />
+        
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:title="番組表"
+        >
+        <ListPreference
+            android:key="sort"
+            android:title="並び替え"
+            android:dialogTitle="並び替え"
+            android:entries="@array/sort_array"
+            android:entryValues="@array/sort_array_value"
+            android:defaultValue="0"
+            />
+        
+        <CheckBoxPreference
+            android:key="favorite_top"
+            android:title="お気に入りをトップ表示"
+            android:summary="番組表の先頭にお気に入りを表示"
+            android:defaultValue="true"
+            />
+        
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="自動更新"
+        >
+        
+        <CheckBoxPreference
+            android:key="auto_refresh"
+            android:title="自動更新"
+            android:summary="番組表を自動で更新する"
+            android:defaultValue="false"
+            />
+
+        <ListPreference
+            android:key="auto_refresh_min"
+            android:title="自動更新の間隔"
+            android:dialogTitle="自動更新の間隔"
+            android:entries="@array/auto_refresh_min_array"
+            android:entryValues="@array/auto_refresh_min_array_value"
+            android:defaultValue="1"
+            />
+
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:title="お気に入りの番組通知"
+        >
+        
+        <CheckBoxPreference
+            android:key="notify_fav"
+            android:title="お気に入り番組開始おしらせ"
+            android:summary="通知領域 ＋ トースト表示"
+            android:defaultValue="true"
+            />
+
+        <CheckBoxPreference
+            android:key="auto_refresh_wakeup"
+            android:title="スリープ状態でも通知"
+            android:summary="自動更新周期で電源ONして通知（※電池消耗注意）"
+            android:defaultValue="false"
+            />
+<!-- 
+        <ListPreference
+            android:key="notify_fav_music"
+            android:title="音"
+            android:summary="音を再生しておしらせ"
+            android:defaultValue="なし"
+            />
+-->
+        <CheckBoxPreference
+            android:key="notify_fav_vibe"
+            android:title="バイブレーション"
+            android:summary="振動でおしらせ"
+            android:defaultValue="true"
+            />
+<!-- 
+        <CheckBoxPreference
+            android:key="notify_fav_lamp"
+            android:title="ランプ"
+            android:summary="ランプ発光でおしらせ"
+            android:defaultValue="true"
+            />
+-->
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="その他"
+        >
+
+        <PreferenceScreen
+            android:key="clear_search"
+            android:title="検索履歴を削除"
+            android:summary="番組検索履歴をすべて削除"
+            />
+        
+        <PreferenceScreen
+            android:key="share"
+            android:title="友達に教える"
+            android:summary="『ねとりす』をシェア"
+            />
+
+        <PreferenceScreen
+            android:key="review"
+            android:title="アプリ評価"
+            android:summary="『ねとりす』を気に入って頂けたらぜひ！"
+            />
+        
+        <PreferenceScreen
+            android:key="version"
+            android:title="バージョン情報"
+            />
+        
+    </PreferenceCategory>
+    
+</PreferenceScreen>

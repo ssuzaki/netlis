@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:layout_width="280dp"
+			  android:layout_height="wrap_content"
+			 android:background="#888"
+			 android:foreground="?android:attr/selectableItemBackground"
+	>
+
+	<TextView
+		android:id="@+id/side_menu_text"
+		android:layout_width="280dp"
+		android:layout_height="60dp"
+		android:textSize="20sp"
+		android:textColor="@color/title"
+		android:text="hoge"
+		android:gravity="center_vertical"
+		android:paddingLeft="20dp"
+		/>
+
+</FrameLayout>

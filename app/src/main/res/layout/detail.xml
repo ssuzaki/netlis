@@ -1,0 +1,356 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+	>
+
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="番組詳細"
+       	android:paddingLeft="8dp"
+        android:background="#0087FF"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        />
+    
+    <ScrollView
+        android:layout_width="fill_parent" 
+	    android:layout_height="0dip"
+	    android:layout_weight="1" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+    
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/desc"
+		    android:text="タイトル"
+		    android:textSize="12dp"
+	        android:paddingLeft="4dp"
+		    />
+	
+		<TextView
+		    android:id="@+id/detailTitle"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="hoge"
+		    android:textSize="20dp"
+			android:textColor="@color/title"
+	        android:paddingLeft="16dp"
+		    android:textStyle="bold"
+		    />
+		
+	   <View
+	       android:layout_width="wrap_content"
+	       android:background="@drawable/gradient"
+	       android:layout_height="1dp"
+	       android:layout_margin="4dp"
+	       />
+	
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/desc"
+		    android:text="放送内容"
+		    android:textSize="12dp"
+	        android:paddingLeft="4dp"
+		    />
+	
+		<TextView
+		    android:id="@+id/detailDESC"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="hoge"
+		    android:textSize="20dp"
+			android:textColor="@color/title"
+	        android:paddingLeft="16dp"
+		    android:textStyle="bold"
+		    />
+		
+	    <View
+	        android:layout_width="wrap_content"
+	        android:background="@drawable/gradient"
+	        android:layout_height="1dp"
+	        android:layout_margin="4dp"
+	        />
+	    
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/desc"
+		    android:text="ジャンル"
+		    android:textSize="12dp"
+	        android:paddingLeft="4dp"
+		    />
+	
+		<TextView
+		    android:id="@+id/detailGNL"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="hoge"
+		    android:textSize="20dp"
+			android:textColor="@color/title"
+	        android:paddingLeft="16dp"
+		    android:textStyle="bold"
+		    />
+		
+	    <View
+	        android:layout_width="wrap_content"
+	        android:background="@drawable/gradient"
+	        android:layout_height="1dp"
+	        android:layout_margin="4dp"
+	        />
+	    
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/desc"
+		    android:text="DJ"
+		    android:textSize="12dp"
+	        android:paddingLeft="4dp"
+		    />
+	
+		<TextView
+		    android:id="@+id/detailDJ"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="hoge"
+		    android:textSize="20dp"
+			android:textColor="@color/title"
+	        android:paddingLeft="16dp"
+		    android:textStyle="bold"
+		    />
+				
+	    <View
+	        android:layout_width="wrap_content"
+	        android:background="@drawable/gradient"
+	        android:layout_height="1dp"
+	        android:layout_margin="4dp"
+	        />
+	
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/desc"
+		    android:text="再生URL"
+		    android:textSize="12dp"
+	        android:paddingLeft="4dp"
+		    />
+		
+		<TextView 
+		    android:id="@+id/detailPURL"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text=""
+		    android:textSize="12dp"
+	        android:paddingLeft="16dp"
+	        android:autoLink="web"
+		    />
+	
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/desc"
+		    android:text="関連URL"
+		    android:textSize="12dp"
+	        android:paddingLeft="4dp"
+		    />
+		
+		<TextView 
+		    android:id="@+id/detailURL"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text=""
+		    android:textSize="12dp"
+	        android:paddingLeft="16dp"
+	        android:autoLink="web"
+		    />
+		
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/desc"
+		    android:text="詳細URL"
+		    android:textSize="12dp"
+	        android:paddingLeft="4dp"
+		    />
+		
+		<TextView 
+		    android:id="@+id/detailSURL"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text=""
+		    android:textSize="12dp"
+	        android:paddingLeft="16dp"
+	        android:autoLink="web"
+		    />		
+		
+	    <View
+	        android:layout_width="wrap_content"
+	        android:background="@drawable/gradient"
+	        android:layout_height="1dp"
+	        android:layout_margin="4dp"
+	        />
+	
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/desc"
+		    android:text="音質"
+		    android:textSize="12dp"
+	        android:paddingLeft="4dp"
+		    />
+		
+		<TextView 
+		    android:id="@+id/detailSoundQuality"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text=""
+		    android:textStyle="bold"
+		    android:textSize="12dp"
+			android:textColor="@color/title"
+	        android:paddingLeft="16dp"
+		    />		
+		
+	    <View
+	        android:layout_width="wrap_content"
+	        android:background="@drawable/gradient"
+	        android:layout_height="1dp"
+	        android:layout_margin="4dp"
+	        />
+	
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/desc"
+		    android:text="放送開始"
+		    android:textSize="12dp"
+	        android:paddingLeft="4dp"
+		    />
+		
+		<TextView 
+		    android:id="@+id/detailTime"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text=""
+		    android:textStyle="bold"
+		    android:textSize="12dp"
+			android:textColor="@color/title"
+	        android:paddingLeft="16dp"
+		    />		
+		
+	    <View
+	        android:layout_width="wrap_content"
+	        android:background="@drawable/gradient"
+	        android:layout_height="1dp"
+	        android:layout_margin="4dp"
+	        />
+	    
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/desc"
+		    android:text="リスナ数"
+		    android:textSize="12dp"
+	        android:paddingLeft="4dp"
+		    />
+		
+		<TextView 
+		    android:id="@+id/detailListener"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text=""
+		    android:textStyle="bold"
+		    android:textSize="12dp"
+			android:textColor="@color/title"
+	        android:paddingLeft="16dp"
+		    />		
+		
+	    <View
+	        android:layout_width="wrap_content"
+	        android:background="@drawable/gradient"
+	        android:layout_height="1dp"
+	        android:layout_margin="4dp"
+	        />
+	    
+    </LinearLayout>
+    
+    </ScrollView>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#0087FF"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        >
+<!-- 
+        <jp.codepanic.netlis.ClickableImageView
+            android:id="@+id/btnDetailPlay"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/play" 
+            android:padding="4dp"
+            android:layout_weight="1"
+            />
+-->
+        <jp.codepanic.netlis.ClickableImageView
+            android:id="@+id/btnDetailFavorite"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:clickable="true"
+            android:onClick="onClickDetailFavorite"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fav_off" 
+            android:padding="4dp"
+            android:layout_weight="1"
+            />
+        
+        <jp.codepanic.netlis.ClickableImageView
+            android:id="@+id/btnDetailRec"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:clickable="true"
+            android:onClick="onClickDetailRec"
+            android:scaleType="fitCenter"
+            android:src="@drawable/rec" 
+            android:padding="4dp"
+            android:layout_weight="1"
+            />
+        
+        <jp.codepanic.netlis.ClickableImageView
+            android:id="@+id/btnDetailBlock"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:clickable="true"
+            android:onClick="onClickDetailBlock"
+            android:scaleType="fitCenter"
+            android:src="@drawable/blocked" 
+            android:padding="4dp"
+            android:layout_weight="1"
+            />
+        
+        <jp.codepanic.netlis.ClickableImageView
+            android:id="@+id/btnDetailShare"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:clickable="true"
+            android:onClick="onClickDetailShare"
+            android:scaleType="fitCenter"
+            android:src="@drawable/share" 
+            android:padding="4dp"
+            android:layout_weight="1"
+            />                
+    </LinearLayout>
+    
+</LinearLayout>

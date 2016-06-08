@@ -1,0 +1,52 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_search"
+        android:orderInCategory="100"
+        android:icon="@drawable/menu_search"
+        android:title="検索"/>
+
+    <item
+        android:id="@+id/menu_searchOff"
+        android:orderInCategory="100"
+        android:icon="@drawable/menu_search_off"
+        android:title="検索解除"/>
+
+    <item
+        android:id="@+id/menu_config"
+        android:orderInCategory="100"
+        android:icon="@drawable/menu_config"
+        android:title="設定"/>
+
+    <item
+        android:id="@+id/menu_sleep"
+        android:orderInCategory="100"
+        android:icon="@drawable/menu_sleep"
+        android:title="タイマー"/>
+
+<!--
+    <item
+        android:id="@+id/menu_tweet"
+        android:orderInCategory="100"
+        android:icon="@drawable/share"
+        android:title="シェア"/>
+
+    <item
+        android:id="@+id/menu_review"
+        android:orderInCategory="100"
+        android:icon="@drawable/good"
+        android:title="評価"/>
+
+    <item
+        android:id="@+id/menu_version"
+        android:orderInCategory="100"
+        android:icon="@drawable/info"
+        android:title="バージョン"/>
+-->
+    <item
+        android:id="@+id/menu_exit"
+        android:orderInCategory="100"
+        android:icon="@drawable/menu_exit"
+        android:title="終了"/>
+    
+</menu>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:label="@string/search_label"
+    android:hint="@string/search_hint"
+	android:searchSuggestAuthority="SuggestionsProvider"
+	android:searchSuggestSelection=" ?"
+	android:imeOptions="actionSearch"
+	android:inputType="text"
+	/>
+
+    <!-- 
+      android:labelとandroid:hintは検索バーに表示される文字列です。
+      なぜかstring.xmlの値を指定する必要あり、直接文字列を指定する
+      とうまく動かないので注意。
+     -->
+     
+    

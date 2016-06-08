@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  >
+          
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+		android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+	    >
+	
+	    <TextView
+			android:id="@+id/textBlockMount"
+			android:textStyle="bold"
+			android:textSize="16dip"
+			android:textColor="@color/title"
+			android:singleLine="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+	        android:paddingLeft="8dp"
+			/>
+
+	    <TextView
+	        android:id="@+id/textBlockTitle"
+	        android:textColor="@color/desc"
+			android:singleLine="true"
+	        android:textSize="10dip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="24dp"
+	        />
+	    	    
+	    <TextView
+	        android:id="@+id/textBlockDesc"
+			android:textColor="@color/desc"
+			android:singleLine="true"
+	        android:textSize="10dip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="24dp"
+	        />
+	
+	    <TextView
+	        android:id="@+id/textBlockGnl"
+			android:textColor="@color/desc"
+			android:singleLine="true"
+	        android:textSize="10dip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="24dp"
+	        />
+	    
+	    <TextView
+	        android:id="@+id/textBlockDJ"
+			android:textColor="@color/desc"
+			android:singleLine="true"
+	        android:textSize="10dip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="24dp"
+	        />
+	    
+	</LinearLayout>
+
+	<CheckBox
+        android:id="@+id/checkBlockSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="16dp"
+        android:clickable="false"
+        android:focusable="false"
+        />
+	
+</RelativeLayout>

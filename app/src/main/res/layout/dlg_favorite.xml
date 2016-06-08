@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_root_favorite"
+    >
+    
+    <TextView
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:text="マウント"
+        android:textSize="16dp"
+        />
+
+    <EditText 
+        android:id="@+id/editFavMount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="半角/からはじまる英数字（※必須）"
+        android:textSize="16dp"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:text="タイトル"
+        android:textSize="16dp"
+        />
+
+    <EditText 
+        android:id="@+id/editFavTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:textSize="16dp"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:text="放送内容"
+        android:textSize="16dp"
+        />
+
+    <EditText 
+        android:id="@+id/editFavDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:textSize="16dp"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:text="ジャンル"
+        android:textSize="16dp"
+        />
+
+    <EditText 
+        android:id="@+id/editFavGnl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:textSize="16dp"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:text="DJ"
+        android:textSize="16dp"
+        />
+
+    <EditText 
+        android:id="@+id/editFavDJ"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:textSize="16dp"
+        />
+        
+</LinearLayout>
+</ScrollView>    
